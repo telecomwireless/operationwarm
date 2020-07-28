@@ -1,0 +1,6 @@
+{
+    "python.linting.enabled": true,
+    "python.pythonPath": "C:\\Users\\5078682\\.pyenv\\pyenv-win\\versions\\3.8.0\\python.exe",
+    "python.autoComplete.extraPaths": ["C:\\Users\\5078682\\projects\\operation-warm\\myenv\\Lib\\site-packages\\"]
+}
+

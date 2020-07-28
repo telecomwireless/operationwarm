@@ -1,0 +1,110 @@
+.main_title {
+    margin: auto;
+    max-width: 500px;
+    }
+    
+.download_link {
+    
+    text-decoration: none;
+    
+    }
+    
+.button_style {
+    position: absolute;
+    /* # width: 300px;
+    # height: 200px; */
+    top: 85%;
+    left: 7%;
+    margin: auto;
+    max-width: 200px;
+    background-color: #E96300;
+    padding: 14px;
+    text-align: center;
+    /* # float:right; */
+    display :flex;
+    color: white;
+    border: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px  
+    }
+    
+    /* # data_count_div = {
+    # # display :flex;
+    # position: absolute;
+    # top: 77%;
+    # left: 40%;
+    # margin: auto
+    # } */
+    
+.graph  {
+    position: absolute;
+    display :flex;
+    margin: auto;
+    top: 15%;
+    left: 38%;
+    }
+    
+.logo {
+    height:16%; 
+    width:10%;
+    display:flex;
+    }
+    
+.fluid_style {
+    margin: auto;
+    max-width: 2000px;
+    /* # columns: 2
+    # resize: both;
+    # overflow: auto */
+    
+}
+    
+.state_text_box {
+    position: absolute;
+    top: 42%;
+    left: 3%;
+    /* margin: auto; */
+    max-width: 300px;
+    width:60%;
+}
+    
+.cat_text_box {
+    position: absolute;
+    top: 33%;
+    left: 3%;
+    max-width: 200px;
+    width:60%;
+    margin-right: "25%";
+    /* #  float: left */
+ }
+    
+.left_side_div {
+    position: absolute;
+    top: 33%;
+    left: 3%;
+    margin: auto;
+    max-width: 500px;   
+}
+    
+.data_count_style  {
+        /* #  verticalAlign:middle;
+    # position: absolute;
+    # top: 25%;
+    # left: 19.8%;
+    # display :flex;
+    # max-width: 200px;
+    # width: 1000px;
+    # height: 200px;
+    # margin: auto; */
+    color: #E96300;
+}
+    
+.data_count_label {
+    /* position: absolute;
+    top: 25%;
+    left: 4%; */
+    margin: auto;
+    max-width: 500px;
+    color: #585858
+}

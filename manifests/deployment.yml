@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: operationwarm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: operationwarm
+  template:
+    metadata:
+      labels:
+        app: operationwarm
+    spec:
+      containers:
+        - name: operationwarm
+          image: kcnag.azurecr.io/operationwarm
+          ports:
+          - containerPort: 8050
