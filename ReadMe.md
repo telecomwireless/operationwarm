@@ -8,7 +8,7 @@ else the marker won't be placed on the map.
 
 ## Installing and Running the application
 
-The easiest way to run this application on your machine is through [docker](https://www.docker.com/) software. To explain in simple terms docker is 
+The easiest way to run this application on your machine is through [docker](https://www.docker.com/) software. To explain in simple terms docker is
 
 1. Download Docker Desktop software.
 

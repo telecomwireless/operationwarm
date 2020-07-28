@@ -230,9 +230,9 @@ def update_output(value, cat_value):
                margin=dict(l=20, r=20, t=20, b=20),
                autosize=True,
                geo_scope='usa',
-               showlegend=True
-            #    width=1000,
-            #    height=600    
+               showlegend=True,
+               width=1000,
+               height=600    
            )
        
     return fig, row_count, '/reportDownload'
