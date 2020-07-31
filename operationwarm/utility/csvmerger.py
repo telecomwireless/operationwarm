@@ -69,11 +69,6 @@ df_category['State'] = df_category['State'].str.strip()
 
 df_category = df_category.assign(StateCode='',Latitude='', Longitude='')
 
-"""
- Color list is used for assigning a color to a category. plotly geoscatter seems to be accepting only
- integer or rgba() values so using below we are giving a number for each category.
-"""
-# color_list=[1,2,3]
 
 for index, row in df_category.iterrows():
     df_category['Name'][index] = row['Name']
@@ -91,18 +86,10 @@ for index, row in df_category.iterrows():
        df_category['Longitude'][index] = lat_lng[1]
     else:
          df_missing_places = df_missing_places.append({'Category': row['Category'], 'City':row['City'], 'State': row['State']},ignore_index=True)
-    
-    # if df_category['Category'][index] == "library":
-    #     df_category['Color'][index] = color_list[0]
-
-    # elif df_category['Category'][index] == "cmp":
-    #     df_category['Color'][index] = color_list[1]
-
-    # elif df_category['Category'][index] == "wishlist":
-    #     df_category['Color'][index] = color_list[2]
 
 df_category['State'] = df_category['State'].apply(lambda x: x.capitalize())
 df_category['City'] = df_category['City'].apply(lambda x: x.capitalize())
 df_category['StateCode'] = df_category['StateCode'].apply(lambda x: x.upper())
 df_category = df_category[df_category['Latitude'].notnull()]
 write_to_csv(df_category, "final")
+write_to_csv(df_missing_places, "missing")

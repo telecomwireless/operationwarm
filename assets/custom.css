@@ -61,18 +61,18 @@
 }
     
 .state_text_box {
-    position: absolute;
+    /* position: absolute;
     top: 42%;
-    left: 3%;
+    left: 3%; */
     /* margin: auto; */
     max-width: 300px;
     width:60%;
 }
     
 .cat_text_box {
-    position: absolute;
+    /* position: absolute;
     top: 33%;
-    left: 3%;
+    left: 3%; */
     max-width: 200px;
     width:60%;
     /* margin-right: "25%"; */
@@ -83,8 +83,8 @@
     position: absolute;
     top: 30%;
     left: 3%;
-    margin: auto;
-    max-width: 500px;   
+    /* margin: auto; */
+    max-width: 400px;   
 }
     
 .data_count_style  {
