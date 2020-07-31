@@ -21,3 +21,14 @@ The easiest way to run this application on your machine is through [docker](http
 4. Once the image is downloaded, you can use docker run command like shown below to start the application.
 
    `docker run -p 8050:8050 kcnagareddy/operationwarm`
+
+
+## Overiew of Important Files:
+
+1. [Final.csv](https://github.com/telecomwireless/operationwarm/blob/master/resources/final.csv) is the main data file that is used for displaying markers on the dashboard. Used [csvmerger.py](https://github.com/telecomwireless/operationwarm/blob/master/operationwarm/utility/csvmerger.py) python script to generate the final.csv file.
+
+2. [scatterplotdash.py](https://github.com/telecomwireless/operationwarm/blob/master/scatterplotdash.py)is the actual file that is running this application and displaying the data.
+
+3) [uscities.csv](https://github.com/telecomwireless/operationwarm/blob/master/resources/uscities.csv) was downloaded from following [website](https://simplemaps.com/data/us-cities) which provided the location data (latitude and longitude) of a given town/city.
+
+4) [Dockerfile](https://github.com/telecomwireless/operationwarm/blob/master/Dockerfile) is used for building docker images and is generally common name to use for applications.
