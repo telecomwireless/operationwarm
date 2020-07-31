@@ -1,11 +1,3 @@
-# Introduction
-
-This application visualizes the areas served/represented by the operationwarm team on the US map.
-There are two text boxes through which a user interacts with this dashboard. First is the category
-field where the user can select either one or multiple categories. Second is the state field where
-the user can select one or multiple states but, when a state is picked user have to select a category
-else the markers won't appear on the map.
-
 ## Installing and Running the application
 
 The easiest way to run this application on your machine is through [docker](https://www.docker.com/) software.
@@ -20,3 +12,12 @@ The easiest way to run this application on your machine is through [docker](http
 
    - [Windows](https://docs.docker.com/docker-for-mac/install/#install-and-run-docker-desktop-on-mac)
    - [Mac](https://docs.docker.com/docker-for-mac/install/#install-and-run-docker-desktop-on-mac)
+   
+3. Once docker is installed, you need to pull the image from docker hub. Just copy paste below
+   command on to window's powershell or mac terminal.
+   
+   `docker pull kcnagareddy/operationwarm`
+   
+4. Once the image is downloaded, you can use docker run command like shown below to start the application.
+
+   `docker run -p 8050:8050 kcnagareddy/operationwarm`
